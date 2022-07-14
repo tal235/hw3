@@ -1,0 +1,27 @@
+
+Box({'name': 'debug', 'seed': 42, 'num_epochs': 50, 'learning_rate': 0.0001, 'accumulation_steps': 1, 'do_train': True, 'do_eval_on_train': False, 'do_eval': True, 'do_test': False, 'data_args': {'max_seq_length': 64, 'batch_size': 1, 'shuffle': True, 'eval_batch_size': 1}, 'model_args': {'output_size': 5, 'dropout': 0.5, 'lstm_args': {'input_size': 50, 'hidden_size': 256, 'num_layers': 3, 'bias': True, 'batch_first': True, 'dropout': 0.2, 'bidirectional': True, 'proj_size': 0}}})
+Loading datasets
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2022.1.2\plugins\python\helpers\pydev\pydevd.py", line 1491, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2022.1.2\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/TALSHA/OneDrive - rafael.co.il/Course/03 - AI Specialist/NLP/HW/hw3/train.py", line 122, in <module>
+    train(training_args)
+  File "C:/Users/TALSHA/OneDrive - rafael.co.il/Course/03 - AI Specialist/NLP/HW/hw3/train.py", line 34, in train
+    train_dataset = TweetDataset(data_args, DATA_DIR / (TRAIN + CSV))
+  File "C:\Users\TALSHA\OneDrive - rafael.co.il\Course\03 - AI Specialist\NLP\HW\hw3\dataloading.py", line 14, in __init__
+    self.df = pd.read_csv(file_path)
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\io\parsers\readers.py", line 934, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\io\parsers\readers.py", line 1218, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\io\common.py", line 786, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\TALSHA\\hw3\\data\\train.csv'

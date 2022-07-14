@@ -1,0 +1,15 @@
+Box({'name': 'debug', 'seed': 42, 'num_epochs': 50, 'learning_rate': 0.0001, 'accumulation_steps': 1, 'do_train': True, 'do_eval_on_train': False, 'do_eval': True, 'do_test': False, 'data_args': {'max_seq_length': 64, 'batch_size': 1, 'shuffle': True, 'eval_batch_size': 1}, 'model_args': {'output_size': 5, 'dropout': 0.5, 'lstm_args': {'input_size': 50, 'hidden_size': 256, 'num_layers': 3, 'bias': True, 'batch_first': True, 'dropout': 0.2, 'bidirectional': True, 'proj_size': 0}}})
+Loading datasets
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'reviewText'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "D:\ProgramData\Anaconda3\envs\new-env\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'reviewText'

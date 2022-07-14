@@ -1,0 +1,8 @@
+Box({'name': 'debug', 'seed': 42, 'num_epochs': 50, 'learning_rate': 0.0001, 'accumulation_steps': 1, 'do_train': True, 'do_eval_on_train': False, 'do_eval': True, 'do_test': False, 'data_args': {'max_seq_length': 64, 'batch_size': 1, 'shuffle': True, 'eval_batch_size': 1}, 'model_args': {'output_size': 5, 'dropout': 0.5, 'lstm_args': {'input_size': 50, 'hidden_size': 256, 'num_layers': 3, 'bias': True, 'batch_first': True, 'dropout': 0.2, 'bidirectional': True, 'proj_size': 0}}})
+Loading datasets
+Traceback (most recent call last):
+  File "C:/Users/TALSHA/OneDrive - rafael.co.il/Course/03 - AI Specialist/NLP/HW/hw3/train.py", line 122, in <module>
+    train(training_args)
+  File "C:/Users/TALSHA/OneDrive - rafael.co.il/Course/03 - AI Specialist/NLP/HW/hw3/train.py", line 34, in train
+    train_dataset = TweetDataset(data_args, DATA_DIR / (TRAIN + CSV))
+KeyboardInterrupt

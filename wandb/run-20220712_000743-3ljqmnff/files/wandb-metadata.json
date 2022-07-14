@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.10.4",
+    "heartbeatAt": "2022-07-11T21:07:49.368800",
+    "startedAt": "2022-07-11T21:07:43.366073",
+    "docker": null,
+    "gpu": "NVIDIA T1200 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:/Users/TALSHA/OneDrive - rafael.co.il/Course/03 - AI Specialist/NLP/HW/hw3/train.py",
+    "codePath": "train.py",
+    "host": "D-C-HDST-NW",
+    "username": "TALSHA",
+    "executable": "D:\\ProgramData\\Anaconda3\\envs\\new-env\\python.exe"
+}
